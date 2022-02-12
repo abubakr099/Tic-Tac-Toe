@@ -1,0 +1,6 @@
+name: tictactoe
+dependencies:
+  - python=3.6*
+  - pip:
+    - pdoc3
+    - pylint

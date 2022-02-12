@@ -1,0 +1,14 @@
+************* Module tictactoe
+src/tictactoe.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src/tictactoe.py:11:12: W0612: Unused variable 'i' (unused-variable)
+src/tictactoe.py:13:16: W0612: Unused variable 'j' (unused-variable)
+src/tictactoe.py:17:4: R0201: Method could be a function (no-self-use)
+src/tictactoe.py:29:8: C0103: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
+src/tictactoe.py:69:8: W0101: Unreachable code (unreachable)
+src/tictactoe.py:25:4: R0911: Too many return statements (7/6) (too-many-return-statements)
+src/tictactoe.py:25:4: R0912: Too many branches (17/12) (too-many-branches)
+src/tictactoe.py:83:4: R0201: Method could be a function (no-self-use)
+
+------------------------------------------------------------------
+Your code has been rated at 8.97/10 (previous run: 8.16/10, +0.80)
+

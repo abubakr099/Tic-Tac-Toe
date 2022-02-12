@@ -1,0 +1,34 @@
+<project name="TicTacToe" default="docs" basedir=".">
+	<!-- Variable declaration -->
+	<!-- Variable usage using ${} -->
+	<property name="src.dir" location="src" />
+	<property name="docs.dir" location="docs" />
+
+	<!-- Deletes the existing docs directory -->
+	<target name="clean">
+		<delete dir="${docs.dir}" />
+	</target>
+
+	<!-- Creates the docs directory -->
+	<target name="makedir">
+		<mkdir dir="${docs.dir}" />
+	</target>
+
+	<target name="test" depends="clean, makedir">
+		<exec executable="python" failonerror="true">
+			<arg line="${src.dir}/test_tictactoe.py" />
+		</exec>
+	</target>
+	<target name="docs" depends="test">
+		<exec executable="pdoc">
+			<arg line="--html ${src.dir}/tictactoe.py --output-dir ${docs.dir}"/>
+		</exec>
+		<exec executable="pylint">
+			<arg line="${src.dir}/tictactoe.py --output-format=text:${docs.dir}/pylinter_report.txt" />
+		</exec>
+	</target>
+	
+	<target name="main" depends="test">
+		<description>Main target</description>
+	</target>
+</project>
