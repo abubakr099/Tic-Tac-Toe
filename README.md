@@ -1,52 +1,50 @@
 # Tic-Tac-Toe
-Tic Tac Toe Game
-The project work is divided into three different sections. In the first
-section, I will get to know how to play the tic-tac-toe game. After
-that, I will see an algorithm that helps us to come up with the
-game logic. Finally, I will see the structured code and its
-explanation.
-Playing Tic TAC Toe
-There will be two players in a game. Two signs represent each player. The general
-signs used in the game are X and O. Finally, there will be a board with 9 boxes.
-The gameplay will be as follows.
-• First, one user will place their sign in one of the available empty boxes.
-• Next, the second user will place their sign in one of the available empty
-boxes.
-• The goal of the players is to place their respective signs completely rowwise or column-wise, or diagonally.
-• The game goes on until a player wins the game or it ended up in a draw
-by filling all boxes without a winning match.
-Algorithm
-I will now discuss the algorithm to write the code. This algorithm will help me to write
-code in any programming language of my choice. Let’s see how it’s done.
-• Create a board using a 2-dimensional array and initialize each element
-as empty.
-o You can represent empty using any symbol you like. Here, we are
-going to use a hyphen. '-'.
-• Write a function to check whether the board is filled or not.
-o Iterate over the board and return false if the board contains an
-empty sign or else return true.
-• Write a function to check whether a player has won or not.
-o We have to check all the possibilities that we discussed in the
-previous section.
-o Check for all the rows, columns, and two diagonals.
-• Write a function to show the board as we will show the board multiple
-times to the users while they are playing.
-• Write a function to start the game.
-o Select the first turn of the player randomly.
-o Write an infinite loop that breaks when the game is over (either
-win or draw).
-▪ Show the board to the user to select the spot for the next
-move.
-▪ Ask the user to enter the row and column number.
-▪ Update the spot with the respective player sign.
-▪ Check whether the current player won the game or not.
-▪ If the current player won the game, then print a winning
-message and break the infinite loop.
-▪ Next, check whether the board is filled or not.
-▪ If the board is filled, then print the draw message and break
-the infinite loop.
-o Finally, show the user the final view of the board.
-I may be able to visualize what’s happening. Don’t worry, even if you didn’t understand
-it completely. I will get more clarity once you see the code.
-I try the code on interpreter Python according the given instructions should
-implemented in my code work.
+
+## Introduction
+This repository contains a Tic-Tac-Toe game implementation. The project is divided into three sections:
+1. **Playing Tic-Tac-Toe**: Instructions on how to play the game.
+2. **Algorithm**: Algorithm to write the game logic.
+3. **Structured Code**: Explanation of the code structure.
+
+## Playing Tic-Tac-Toe
+Tic-Tac-Toe is a two-player game where each player takes turns marking spaces in a 3x3 grid. The players are represented by the symbols 'X' and 'O'. The goal is to place three of their marks in a horizontal, vertical, or diagonal row. The game ends when one player achieves this goal, or the board is filled without a winner.
+
+### Gameplay:
+1. Two players take turns to place their symbols ('X' or 'O') on the board.
+2. The first player to align three of their symbols in a row, column, or diagonal wins the game.
+3. If all spaces on the board are filled and there is no winner, the game ends in a draw.
+
+## Algorithm
+The algorithm for the Tic-Tac-Toe game logic is as follows:
+1. Initialize the game board.
+2. Write functions to:
+   - Check if the board is filled.
+   - Check if a player has won.
+   - Print the current state of the board.
+   - Start the game loop:
+     - Randomly select the first player.
+     - Iterate until the game ends:
+       - Prompt the current player to make a move.
+       - Update the board.
+       - Check if the current player has won.
+       - Check if the board is filled (draw).
+       - Switch to the next player.
+
+## Structured Code
+The code is structured following the algorithm described above. It includes:
+- Initialization of the game board.
+- Functions to check for a win, board filled status, and to print the board.
+- Implementation of the game loop to handle player moves and game termination.
+
+Feel free to clone this repository and explore the code to understand the implementation details.
+
+## Usage
+To play the Tic-Tac-Toe game:
+1. Clone or download this repository to your local machine.
+2. Navigate to the directory containing the code.
+3. Run the Python script `tictactoe.py`.
+4. Follow the on-screen instructions to play the game.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
